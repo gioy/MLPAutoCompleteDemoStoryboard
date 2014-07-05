@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44300EE51967FD9C0066B552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44300EE41967FD9C0066B552 /* Foundation.framework */; };
+		44300EE71967FD9C0066B552 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44300EE61967FD9C0066B552 /* CoreGraphics.framework */; };
+		44300EE91967FD9C0066B552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44300EE81967FD9C0066B552 /* UIKit.framework */; };
+		44300EEF1967FD9C0066B552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44300EED1967FD9C0066B552 /* InfoPlist.strings */; };
+		44300EF11967FD9C0066B552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300EF01967FD9C0066B552 /* main.m */; };
+		44300EF51967FD9C0066B552 /* GPCMLPAutoCompleteDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300EF41967FD9C0066B552 /* GPCMLPAutoCompleteDemoAppDelegate.m */; };
+		44300EF81967FD9C0066B552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44300EF61967FD9C0066B552 /* Main.storyboard */; };
+		44300EFB1967FD9C0066B552 /* GPCMLPAutoCompleteDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300EFA1967FD9C0066B552 /* GPCMLPAutoCompleteDemoViewController.m */; };
+		44300EFD1967FD9C0066B552 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44300EFC1967FD9C0066B552 /* Images.xcassets */; };
+		44300F041967FD9D0066B552 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44300F031967FD9D0066B552 /* XCTest.framework */; };
+		44300F051967FD9D0066B552 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44300EE41967FD9C0066B552 /* Foundation.framework */; };
+		44300F061967FD9D0066B552 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44300EE81967FD9C0066B552 /* UIKit.framework */; };
+		44300F0E1967FD9D0066B552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44300F0C1967FD9D0066B552 /* InfoPlist.strings */; };
+		44300F101967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300F0F1967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.m */; };
+		44300F211967FEA10066B552 /* MLPAutoCompleteTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300F1B1967FEA10066B552 /* MLPAutoCompleteTextField.m */; };
+		44300F221967FEA10066B552 /* NSString+Levenshtein.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300F201967FEA10066B552 /* NSString+Levenshtein.m */; };
+		44300F27196803F30066B552 /* DEMOCustomAutoCompleteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300F24196803F30066B552 /* DEMOCustomAutoCompleteObject.m */; };
+		44300F28196803F30066B552 /* DEMODataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 44300F26196803F30066B552 /* DEMODataSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44300F071967FD9D0066B552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44300ED91967FD9C0066B552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44300EE01967FD9C0066B552;
+			remoteInfo = MLPAutoCompleteDemoStoryboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44300EE11967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLPAutoCompleteDemoStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44300EE41967FD9C0066B552 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44300EE61967FD9C0066B552 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44300EE81967FD9C0066B552 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44300EEC1967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLPAutoCompleteDemoStoryboard-Info.plist"; sourceTree = "<group>"; };
+		44300EEE1967FD9C0066B552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44300EF01967FD9C0066B552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44300EF21967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MLPAutoCompleteDemoStoryboard-Prefix.pch"; sourceTree = "<group>"; };
+		44300EF31967FD9C0066B552 /* GPCMLPAutoCompleteDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCMLPAutoCompleteDemoAppDelegate.h; sourceTree = "<group>"; };
+		44300EF41967FD9C0066B552 /* GPCMLPAutoCompleteDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCMLPAutoCompleteDemoAppDelegate.m; sourceTree = "<group>"; };
+		44300EF71967FD9C0066B552 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44300EF91967FD9C0066B552 /* GPCMLPAutoCompleteDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCMLPAutoCompleteDemoViewController.h; sourceTree = "<group>"; };
+		44300EFA1967FD9C0066B552 /* GPCMLPAutoCompleteDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCMLPAutoCompleteDemoViewController.m; sourceTree = "<group>"; };
+		44300EFC1967FD9C0066B552 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		44300F021967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLPAutoCompleteDemoStoryboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44300F031967FD9D0066B552 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		44300F0B1967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLPAutoCompleteDemoStoryboardTests-Info.plist"; sourceTree = "<group>"; };
+		44300F0D1967FD9D0066B552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44300F0F1967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLPAutoCompleteDemoStoryboardTests.m; sourceTree = "<group>"; };
+		44300F1A1967FEA10066B552 /* MLPAutoCompleteTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextField.h; sourceTree = "<group>"; };
+		44300F1B1967FEA10066B552 /* MLPAutoCompleteTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLPAutoCompleteTextField.m; sourceTree = "<group>"; };
+		44300F1C1967FEA10066B552 /* MLPAutoCompleteTextFieldDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextFieldDataSource.h; sourceTree = "<group>"; };
+		44300F1D1967FEA10066B552 /* MLPAutoCompleteTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompleteTextFieldDelegate.h; sourceTree = "<group>"; };
+		44300F1E1967FEA10066B552 /* MLPAutoCompletionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLPAutoCompletionObject.h; sourceTree = "<group>"; };
+		44300F1F1967FEA10066B552 /* NSString+Levenshtein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Levenshtein.h"; sourceTree = "<group>"; };
+		44300F201967FEA10066B552 /* NSString+Levenshtein.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Levenshtein.m"; sourceTree = "<group>"; };
+		44300F23196803F30066B552 /* DEMOCustomAutoCompleteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMOCustomAutoCompleteObject.h; sourceTree = "<group>"; };
+		44300F24196803F30066B552 /* DEMOCustomAutoCompleteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMOCustomAutoCompleteObject.m; sourceTree = "<group>"; };
+		44300F25196803F30066B552 /* DEMODataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEMODataSource.h; sourceTree = "<group>"; };
+		44300F26196803F30066B552 /* DEMODataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEMODataSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44300EDE1967FD9C0066B552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44300EE71967FD9C0066B552 /* CoreGraphics.framework in Frameworks */,
+				44300EE91967FD9C0066B552 /* UIKit.framework in Frameworks */,
+				44300EE51967FD9C0066B552 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44300EFF1967FD9D0066B552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44300F041967FD9D0066B552 /* XCTest.framework in Frameworks */,
+				44300F061967FD9D0066B552 /* UIKit.framework in Frameworks */,
+				44300F051967FD9D0066B552 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44300ED81967FD9C0066B552 = {
+			isa = PBXGroup;
+			children = (
+				44300EEA1967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard */,
+				44300F091967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests */,
+				44300EE31967FD9C0066B552 /* Frameworks */,
+				44300EE21967FD9C0066B552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44300EE21967FD9C0066B552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44300EE11967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard.app */,
+				44300F021967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44300EE31967FD9C0066B552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44300EE41967FD9C0066B552 /* Foundation.framework */,
+				44300EE61967FD9C0066B552 /* CoreGraphics.framework */,
+				44300EE81967FD9C0066B552 /* UIKit.framework */,
+				44300F031967FD9D0066B552 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44300EEA1967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				44300EF61967FD9C0066B552 /* Main.storyboard */,
+				44300F191967FEA10066B552 /* MLPAutoCompleteTextField */,
+				44300F23196803F30066B552 /* DEMOCustomAutoCompleteObject.h */,
+				44300F24196803F30066B552 /* DEMOCustomAutoCompleteObject.m */,
+				44300F25196803F30066B552 /* DEMODataSource.h */,
+				44300F26196803F30066B552 /* DEMODataSource.m */,
+				44300EF91967FD9C0066B552 /* GPCMLPAutoCompleteDemoViewController.h */,
+				44300EFA1967FD9C0066B552 /* GPCMLPAutoCompleteDemoViewController.m */,
+				44300EF31967FD9C0066B552 /* GPCMLPAutoCompleteDemoAppDelegate.h */,
+				44300EF41967FD9C0066B552 /* GPCMLPAutoCompleteDemoAppDelegate.m */,
+				44300EFC1967FD9C0066B552 /* Images.xcassets */,
+				44300EEB1967FD9C0066B552 /* Supporting Files */,
+			);
+			path = MLPAutoCompleteDemoStoryboard;
+			sourceTree = "<group>";
+		};
+		44300EEB1967FD9C0066B552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44300EEC1967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard-Info.plist */,
+				44300EED1967FD9C0066B552 /* InfoPlist.strings */,
+				44300EF01967FD9C0066B552 /* main.m */,
+				44300EF21967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44300F091967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				44300F0F1967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.m */,
+				44300F0A1967FD9D0066B552 /* Supporting Files */,
+			);
+			path = MLPAutoCompleteDemoStoryboardTests;
+			sourceTree = "<group>";
+		};
+		44300F0A1967FD9D0066B552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44300F0B1967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests-Info.plist */,
+				44300F0C1967FD9D0066B552 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44300F191967FEA10066B552 /* MLPAutoCompleteTextField */ = {
+			isa = PBXGroup;
+			children = (
+				44300F1A1967FEA10066B552 /* MLPAutoCompleteTextField.h */,
+				44300F1B1967FEA10066B552 /* MLPAutoCompleteTextField.m */,
+				44300F1C1967FEA10066B552 /* MLPAutoCompleteTextFieldDataSource.h */,
+				44300F1D1967FEA10066B552 /* MLPAutoCompleteTextFieldDelegate.h */,
+				44300F1E1967FEA10066B552 /* MLPAutoCompletionObject.h */,
+				44300F1F1967FEA10066B552 /* NSString+Levenshtein.h */,
+				44300F201967FEA10066B552 /* NSString+Levenshtein.m */,
+			);
+			path = MLPAutoCompleteTextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44300EE01967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44300F131967FD9D0066B552 /* Build configuration list for PBXNativeTarget "MLPAutoCompleteDemoStoryboard" */;
+			buildPhases = (
+				44300EDD1967FD9C0066B552 /* Sources */,
+				44300EDE1967FD9C0066B552 /* Frameworks */,
+				44300EDF1967FD9C0066B552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLPAutoCompleteDemoStoryboard;
+			productName = MLPAutoCompleteDemoStoryboard;
+			productReference = 44300EE11967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44300F011967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44300F161967FD9D0066B552 /* Build configuration list for PBXNativeTarget "MLPAutoCompleteDemoStoryboardTests" */;
+			buildPhases = (
+				44300EFE1967FD9D0066B552 /* Sources */,
+				44300EFF1967FD9D0066B552 /* Frameworks */,
+				44300F001967FD9D0066B552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44300F081967FD9D0066B552 /* PBXTargetDependency */,
+			);
+			name = MLPAutoCompleteDemoStoryboardTests;
+			productName = MLPAutoCompleteDemoStoryboardTests;
+			productReference = 44300F021967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44300ED91967FD9C0066B552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GPC;
+				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					44300F011967FD9D0066B552 = {
+						TestTargetID = 44300EE01967FD9C0066B552;
+					};
+				};
+			};
+			buildConfigurationList = 44300EDC1967FD9C0066B552 /* Build configuration list for PBXProject "MLPAutoCompleteDemoStoryboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44300ED81967FD9C0066B552;
+			productRefGroup = 44300EE21967FD9C0066B552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44300EE01967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard */,
+				44300F011967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44300EDF1967FD9C0066B552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44300EFD1967FD9C0066B552 /* Images.xcassets in Resources */,
+				44300EEF1967FD9C0066B552 /* InfoPlist.strings in Resources */,
+				44300EF81967FD9C0066B552 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44300F001967FD9D0066B552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44300F0E1967FD9D0066B552 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44300EDD1967FD9C0066B552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44300F28196803F30066B552 /* DEMODataSource.m in Sources */,
+				44300EF11967FD9C0066B552 /* main.m in Sources */,
+				44300F221967FEA10066B552 /* NSString+Levenshtein.m in Sources */,
+				44300F27196803F30066B552 /* DEMOCustomAutoCompleteObject.m in Sources */,
+				44300F211967FEA10066B552 /* MLPAutoCompleteTextField.m in Sources */,
+				44300EF51967FD9C0066B552 /* GPCMLPAutoCompleteDemoAppDelegate.m in Sources */,
+				44300EFB1967FD9C0066B552 /* GPCMLPAutoCompleteDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44300EFE1967FD9D0066B552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44300F101967FD9D0066B552 /* MLPAutoCompleteDemoStoryboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44300F081967FD9D0066B552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44300EE01967FD9C0066B552 /* MLPAutoCompleteDemoStoryboard */;
+			targetProxy = 44300F071967FD9D0066B552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44300EED1967FD9C0066B552 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44300EEE1967FD9C0066B552 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		44300EF61967FD9C0066B552 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44300EF71967FD9C0066B552 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44300F0C1967FD9D0066B552 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44300F0D1967FD9D0066B552 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44300F111967FD9D0066B552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		44300F121967FD9D0066B552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44300F141967FD9D0066B552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLPAutoCompleteDemoStoryboard/MLPAutoCompleteDemoStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "MLPAutoCompleteDemoStoryboard/MLPAutoCompleteDemoStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		44300F151967FD9D0066B552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLPAutoCompleteDemoStoryboard/MLPAutoCompleteDemoStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "MLPAutoCompleteDemoStoryboard/MLPAutoCompleteDemoStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		44300F171967FD9D0066B552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MLPAutoCompleteDemoStoryboard.app/MLPAutoCompleteDemoStoryboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLPAutoCompleteDemoStoryboard/MLPAutoCompleteDemoStoryboard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MLPAutoCompleteDemoStoryboardTests/MLPAutoCompleteDemoStoryboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		44300F181967FD9D0066B552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MLPAutoCompleteDemoStoryboard.app/MLPAutoCompleteDemoStoryboard";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLPAutoCompleteDemoStoryboard/MLPAutoCompleteDemoStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "MLPAutoCompleteDemoStoryboardTests/MLPAutoCompleteDemoStoryboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44300EDC1967FD9C0066B552 /* Build configuration list for PBXProject "MLPAutoCompleteDemoStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44300F111967FD9D0066B552 /* Debug */,
+				44300F121967FD9D0066B552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44300F131967FD9D0066B552 /* Build configuration list for PBXNativeTarget "MLPAutoCompleteDemoStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44300F141967FD9D0066B552 /* Debug */,
+				44300F151967FD9D0066B552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44300F161967FD9D0066B552 /* Build configuration list for PBXNativeTarget "MLPAutoCompleteDemoStoryboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44300F171967FD9D0066B552 /* Debug */,
+				44300F181967FD9D0066B552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44300ED91967FD9C0066B552 /* Project object */;
+}
